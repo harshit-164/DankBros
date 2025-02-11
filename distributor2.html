@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Pickup Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pickup Location Details</h2>
+        <form id="pickup-form">
+            <label for="pickup-location">Pickup Location:</label>
+            <input type="text" id="pickup-location" placeholder="Enter pickup location" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter address" required>
+            
+            <button type="submit">Next</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("pickup-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            const pickupLocation = document.getElementById("pickup-location").value.trim();
+            const address = document.getElementById("address").value.trim();
+            
+            if (pickupLocation && address) {
+                localStorage.setItem("pickupLocation", pickupLocation);
+                localStorage.setItem("address", address);
+                window.location.href = "distributor3.html";
+            } else {
+                alert("Please fill in all fields.");
+            }
+        });
+    </script>
+</body>
+</html>

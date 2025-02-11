@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Confirmation</title>
+    <link rel="stylesheet" href="confirmation.css">
+</head>
+<body>
+    <div class="confirmation-container">
+        <h2>Food Pickup Details</h2>
+
+        <div id="food-details">
+            <h3>Food Items Selected:</h3>
+            <ul id="food-list"></ul>
+            <p><strong>Quantity:</strong> <span id="food-quantity"></span></p>
+        </div>
+
+        <div id="pickup-options">
+            <h3>Pickup Location:</h3>
+            <p><strong>Option 1 (Hotel Address):</strong></p>
+            <p id="hotel-name"></p>
+            <p id="hotel-address"></p>
+            
+            <p><strong>Option 2 (Common Pickup Point):</strong></p>
+            <p id="pickup-point"></p>
+        </div>
+
+        <div class="terms">
+            <h3>Terms & Conditions</h3>
+            <p>✔️ The food should be picked up within the allocated time.</p>
+            <p>✔️ The receiver must arrange for an agent to collect the food.</p>
+            <p>✔️ The food is donated voluntarily and must be checked before pickup.</p>
+            <p>✔️ Pickup can be done from the hotel address or a common point.</p>
+        </div>
+
+        <button id="confirm-btn">Confirm Pickup</button>
+    </div>
+
+    <script src="confirmation.js"></script>
+</body>
+</html>

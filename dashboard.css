@@ -1,0 +1,87 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: url('./assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+}
+
+/* Heading */
+h2 {
+    color: #0056b3;
+    margin-bottom: 15px;
+}
+
+/* Food Grid */
+.food-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Food Item Card */
+.food-item {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.food-item:hover {
+    transform: scale(1.05);
+}
+
+/* Food Image */
+.food-item img {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Food Title */
+.food-item h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Hotel/Outlet Name */
+.food-item p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Select Button */
+.select-btn {
+    background: #0056b3;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.select-btn:hover {
+    background: #003d80;
+}

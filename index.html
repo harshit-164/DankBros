@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Bridge - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="assets/logo.jpg" alt="Food Bridge Logo" class="logo">
+        <h2>Food Bridge</h2>
+        
+        <!-- Role Selection -->
+        <div class="role-selection">
+            <label class="role-box" for="distributor">
+                <input type="radio" id="distributor" name="role" value="distributor" checked>
+                <span>Food Distributor</span>
+            </label>
+            <label class="role-box" for="receiver">
+                <input type="radio" id="receiver" name="role" value="receiver">
+                <span>Food Receiver</span>
+            </label>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            
+            <div class="remember-forgot">
+                <label><input type="checkbox" required> Accept <a href="#">Terms & Conditions</a></label>
+                <a href="#">Forgot Password?</a>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        
+        <button id="feedback-btn">Give Feedback</button>
+    </div>
+
+    <!-- Feedback Form (Hidden by default) -->
+    <div id="feedback-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Feedback</h2>
+            <textarea id="feedback" placeholder="Write your feedback..."></textarea>
+            <button id="submit-feedback">Submit</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
